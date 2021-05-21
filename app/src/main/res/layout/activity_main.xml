@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/imgTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="152dp"
+        android:layout_height="192dp"
         android:foregroundGravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/imgNext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

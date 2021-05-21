@@ -15,7 +15,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
+        val img:ImageView = findViewById(R.id.imgTitle)
+        GlideApp.with(this)
+        .load(R.drawable.cover)
+        .into(img)
         Toast.makeText(baseContext,"作者:楊宜學",Toast.LENGTH_LONG).show()
 
         imgNext.setOnLongClickListener(object : View.OnLongClickListener {
