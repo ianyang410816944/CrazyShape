@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 @GlideModule
 public final class MyAppGlideModule : AppGlideModule()
 class MainActivity : AppCompatActivity() ,View.OnClickListener{
-    lateinit var gDetector: GestureDetector
+
      //目前顯示第幾張圖
 
     var TotalPictures:Int = 4 //總共幾張圖片(假設僅顯示pu0-pu3)
@@ -42,17 +42,20 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         })
     }
     override fun onClick(v: View?) {
-        var X:Int =(0..3).random()
-        if(X==0){
+        var Picturenum:Int =(0..3).random()
+        if(Picturenum==0){
             imgNext.setImageResource(R.drawable.circle)
-        }else if(X==1){
+
+        }else if(Picturenum==1){
             imgNext.setImageResource(R.drawable.square)
-        }else if(X==2){
+        }else if(Picturenum==2){
             imgNext.setImageResource(R.drawable.star)
-        }else if(X==3){
+        }else if(Picturenum==3){
             imgNext.setImageResource(R.drawable.triangle)
         }
     }
+
 }
+
 
 
